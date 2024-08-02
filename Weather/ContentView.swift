@@ -106,8 +106,8 @@ struct ContentView: View {
                             .padding()
                         }
                         .onAppear {
-                            let latitude: CLLocationDegrees = 50.00
-                            let longitude: CLLocationDegrees = -78.86
+                            let latitude: CLLocationDegrees = 43.6529
+                            let longitude: CLLocationDegrees = -79.3849
                             weatherNetwork.fetchWeather(latitude: latitude, longitude: longitude)
                         }
                     }
