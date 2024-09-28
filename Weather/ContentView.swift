@@ -66,18 +66,15 @@ struct ContentView: View {
                                 VStack(alignment: .trailing) {
                                     if let city = weatherNetwork.weatherModel?.name {
                                         Text(city)
-                                            //.minimumScaleFactor(0.25)
+                                            .minimumScaleFactor(0.25)
                                     }
-//                                    if let country = weatherNetwork.weatherModel?.sys.country {
-//                                        Text(country)
-//                                    }
                                 }
                                 .padding()
-                                .foregroundStyle(.black)
+                                //.foregroundStyle(.black)
                                 .font(.system(size: 30))
                                 .fontWeight(.semibold)
                                 .fontDesign(.monospaced)
-                                .foregroundStyle(.black)
+                                //.foregroundStyle(.black)
                             }
                             .frame(maxWidth: 370)
                             .background(.regularMaterial.opacity(0.5))
